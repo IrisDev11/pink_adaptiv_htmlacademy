@@ -1,0 +1,298 @@
+.advantages {
+  text-align: center;
+  background-image: url("../../img/advantages-bg-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: 50% bottom;
+  background-size: 1172px 828px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 25px;
+    text-align: start;
+    background-image: url("../../img/advantages-bg-tablet.svg");
+    background-size: 100% auto;
+    background-position: 50% 215px;
+  }
+
+  @media (min-width: @desktop-width) {
+    text-align: center;
+    background-color: @lightgrey;
+    background-image: url("../../img/advantages-bg-desktop.svg");
+    background-size: 100% auto;
+    background-position: 50% 320px;
+  }
+}
+
+.advantages__titles {
+  margin-bottom: 44px;
+  padding: 40px 20px 40px 20px;
+
+  @media (min-width: @tablet-width) {
+    width: 620px;
+    margin-bottom: 65px;
+    padding: 45px 0 40px 0;
+    text-align: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 940px;
+    margin-bottom: 57px;
+    padding: 61px 0 0 0;
+  }
+}
+
+.advantages__list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  width: 260px;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+
+  @media (min-width: @tablet-width) {
+    position: relative;
+    width: auto;
+    margin-left: 310px;
+  }
+
+  @media (min-width: @desktop-width) {
+    flex-direction: row;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  &::after {
+    content: " ";
+    left: 0;
+    bottom: 0;
+    width: 157px;
+    height: 278px;
+    background-image: url("../../img/advantages-iphone-mobile.png");
+    background-repeat: no-repeat;
+    background-size: 157px 320px;
+    background-position: 0 0;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/advantages-iphone-mobile@2x.png");
+    }
+
+    @media (min-width: @tablet-width) {
+      position: absolute;
+      left: -310px;
+      width: 268px;
+      height: 480px;
+      background-image: url("../../img/advantages-iphone-tablet.png");
+      background-size: 268px 547px;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../../img/advantages-iphone-tablet@2x.png");
+      }
+    }
+
+    @media (min-width: @desktop-width) {
+      display: none;
+    }
+  }
+}
+
+.advantages__item {
+  &:last-child {
+    margin-bottom: 27px;
+
+    @media (min-width: @desktop-width) {
+      margin-bottom: 0;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 252px;
+    margin-left: 24px;
+
+    &:nth-child(2) {
+      margin-right: 43px;
+      margin-left: 68px;
+    }
+
+    &::before {
+      content: " ";
+      top: 0;
+      left: 0;
+      width: 308px;
+      height: 300px;
+      background-image: url("../../img/iphone-black-white.png");
+      background-repeat: no-repeat;
+      background-size: 308px 382px;
+      background-position: center 0;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../../img/iphone-black-white@2x.png");
+      }
+    }
+  }
+}
+
+.advantages__item--change::before {
+  background-image: url("../../img/iphone-pink.png");
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/iphone-pink@2x.png");
+  }
+}
+
+.advantages__item--friends::before {
+  background-image: url("../../img/iphone-pink-smile.png");
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/iphone-pink-smile@2x.png");
+  }
+}
+
+.advantages__title {
+  margin: 0 0 30px 0;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 120%;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    padding: 0;
+    font-size: 40px;
+    line-height: 54px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 50px;
+    line-height: 68px;
+  }
+}
+
+.advantages__item-title {
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+
+  @media (min-width: @desktop-width) {
+    margin-top: 57px;
+    margin-bottom: 13px;
+    font-size: 30px;
+    line-height: 30px;
+  }
+}
+
+.advantages__description {
+  display: block;
+  margin: 11px 0 31px 0;
+  padding: 0;
+  font-size: 14px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 12px;
+    margin-bottom: 35px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+.advantages__item:last-child .advantages__description {
+  margin-bottom: 15px;
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 35px;
+  }
+}
+
+.advantages__promo-wrapper {
+  @media (min-width: @tablet-width) {
+    position: relative;
+    width: 310px;
+    margin: 0 auto;
+    padding: 97px 20px 54px 330px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 570px;
+    min-height: 273px;
+    padding: 125px 130px 45px 500px;
+    text-align: start;
+  }
+
+  &::before {
+    content: " ";
+    position: absolute;
+    top: 54px;
+    left: 20px;
+    width: 238px;
+    height: 276px;
+    background-image: url("../../img/time.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 238px 276px;
+
+    @media (min-width: @desktop-width) {
+      top: 33px;
+      left: 130px;
+      width: 298px;
+      height: 345px;
+      background-size: 298px 345px;
+    }
+  }
+}
+
+.advantages__promo {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    background-color: @white;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-color: @lightgrey;
+  }
+}
+
+.advantages__promo-title {
+  display: block;
+  margin: 0 0 10px 0;
+  padding-right: 20px;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 27px;
+    line-height: 30px;
+  }
+}
+
+.advantages__promo-description {
+  margin: 0 0 10px 0;
+  font-weight: 400;
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 30px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+.advantages__promo-link {
+  font-size: 14px;
+  line-height: 24px;
+  color: @pink;
+
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}

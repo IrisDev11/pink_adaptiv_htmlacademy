@@ -1,0 +1,137 @@
+.main-nav__list {
+  display: none;
+  margin: -65px 0 0 0;
+  padding: 65px 0 0 0;
+  list-style: none;
+  text-align: center;
+  background-color: @darkblue;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 0 @black;
+
+  @media (min-width: @tablet-width) {
+    margin-top: -110px;
+    padding-top: 110px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 24px;
+    margin-right: 130px;
+    padding-top: 0;
+    background-color: transparent;
+    box-shadow: none;
+  }
+}
+
+.main-nav__item {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 -1px 0 @black;
+
+  @media (min-width: @desktop-width) {
+    padding-top: 0;
+    box-shadow: none;
+
+    &:not(:first-child) {
+      margin-left: 80px;
+    }
+  }
+}
+
+.main-nav__link {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 32px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: @white;
+
+  &:hover {
+    color: @pink;
+  }
+
+  &:active {
+    color: fade(@pink, 30%);
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 7px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+    text-transform: none;
+
+    &:active {
+      color: fade(@white, 30%);
+    }
+  }
+}
+
+.main-nav__link--current {
+  @media (min-width: @desktop-width) {
+    border-bottom: 2px solid @white;
+  }
+}
+
+.main-nav__toggle {
+  position: absolute;
+  top: 20px;
+  right: 24px;
+  display: block;
+  width: 50px;
+  height: 24px;
+  border: none;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  fill: @white;
+  cursor: pointer;
+
+  @media (min-width: @tablet-width) {
+    top: 43px;
+    right: 24px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.main-nav--closed .main-nav__toggle-opened {
+  display: none;
+}
+
+.main-nav--opened .main-nav__toggle-closed {
+  display: none;
+}
+
+.main-nav__toggle:hover {
+  fill: @pink;
+}
+
+.main-nav__toggle:active {
+  fill: fade(@pink, 30%);
+}
+
+.main-nav--opened .main-nav__list {
+  display: block;
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+  }
+}
+
+@media (max-width: @tablet-width-only) {
+  .main-nav--closed .main-nav__list {
+    display: none;
+  }
+}
+
+.main-nav--nojs .main-nav__toggle {
+  display: none;
+}
+
+.main-nav--nojs .main-nav__list {
+  position: static;
+  display: block;
+}

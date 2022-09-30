@@ -1,0 +1,33 @@
+.page {
+  min-width: 320px;
+  font-family: "Opensans", "Arial", "Helvetica", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.page__body {
+  min-height: 100vh;
+  margin: 0;
+  background-color: @white;
+  color: @darkblue;
+}
+
+.page-main {
+  @media (min-width: @tablet-width) {
+    margin-bottom: 7px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 32px;
+  }
+}
+
+.page-inner {
+  @media (min-width: @tablet-width) {
+    margin-bottom: 62px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 0;
+  }
+}

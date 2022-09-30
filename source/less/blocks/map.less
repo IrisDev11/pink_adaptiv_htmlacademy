@@ -1,0 +1,46 @@
+.map {
+  position: relative;
+  min-height: 200px;
+
+  @media (min-width: @tablet-width) {
+    min-height: 374px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-height: 505px;
+  }
+}
+
+.map__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+
+  @media (min-width: @tablet-width) {
+    height: 374px;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 505px;
+  }
+}
+
+.map-img {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 200px;
+
+  @media (min-width: @tablet-width) {
+    height: 374px;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 505px;
+  }
+}
