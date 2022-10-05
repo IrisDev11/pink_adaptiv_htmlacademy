@@ -2,7 +2,7 @@
 
 Вёрстка: [Ирина Исакова](https://github.com/IrisDev11/)
 
-[Демо проекта](https://github.com/IrisDev11/pink_htmlacademy/)
+[Демо проекта](https://github.com/IrisDev11/pink_adaptiv_htmlacademy/build/)
 
 ---
 
