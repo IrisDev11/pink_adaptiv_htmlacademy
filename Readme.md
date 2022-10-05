@@ -1,58 +1,43 @@
-# Личный проект «{{projectTitle}}» 
+# Проект «Пинк» от [HTML Academy](https://htmlacademy.ru/)
 
-* Студент: [{{userName}}]({{userProfile}}).
-* Наставник: `Неизвестно`.
+Вёрстка: [Ирина Исакова](https://github.com/IrisDev11/)
 
----
-
-**Обратите внимание, что папка с вашими исходными файлами — `source/`.**
-
-Полезный файл:
-
-- [Contributing.md](Contributing.md) — руководство по внесению изменений.
-
-_Не удаляйте и не обращайте внимание на файлы:_<br>
-_`.editorconfig`, `.gitattributes`, `.gitignore`, `.stylelintrc`, `.travis.yml`, `package-lock.json`, `package.json`._
+[Демо проекта](https://github.com/IrisDev11/pink_htmlacademy/)
 
 ---
 
-### Памятка
+## Как использовать
 
-#### 1. Зарегистрируйтесь на Гитхабе
+`npm install` - установка зависимостей.
 
-Если у вас ещё нет аккаунта на [github.com](https://github.com/join), скорее зарегистрируйтесь.
+`npm start` - сборка проекта в режиме разработки и запуск локального сервера.
 
-#### 2. Создайте форк
+`npm run build` - финальная сборка проекта.
 
-[Откройте мастер-репозиторий]({{homepage}}) и нажмите кнопку «Fork» в правом верхнем углу. Репозиторий из Академии будет скопирован в ваш аккаунт.
+`npm test` - запуск теста на наличие стилистических ошибок.
 
-<img width="800" alt="" src="https://user-images.githubusercontent.com/10909/60808088-259e3a80-a190-11e9-98f7-3c0edd9740f5.jpg">
+---
 
-Получится вот так:
+## Структура проекта
 
-<img width="800" alt="" src="https://user-images.githubusercontent.com/10909/60808087-2505a400-a190-11e9-8caa-2e7584c702cc.jpg">
-
-#### 3. Клонируйте репозиторий на свой компьютер
-
-Будьте внимательны: нужно клонировать свой репозиторий (форк), а не репозиторий Академии. Также обратите внимание, что клонировать репозиторий нужно через SSH, а не через HTTPS. Нажмите зелёную кнопку в правой части экрана, чтобы скопировать SSH-адрес вашего репозитория:
-
-<img width="800" alt="" src="https://user-images.githubusercontent.com/10909/60808090-259e3a80-a190-11e9-8a64-c58d94803b73.jpg">
-
-Клонировать репозиторий можно так:
-
+```bash
+.
+├── build/            # каталог сборки проекта (cоздаётся автоматически)
+├── gulpfile.js/      # каталог задач для Gulp
+├── source/           # каталог для размещения исходных файлов проекта
+│   ├── fonts/        # каталог шрифтов
+│   ├── img/          # каталог растровых и векторных изображений
+│   │   └── icon/     # каталог векторных изображений для генерации векторного спрайта
+│   ├── js/           # каталог JS файлов
+│   ├── styles/       # каталог файлов стилей
+│   └── index.html    # файл разметки страницы
+├── .editorconfig     # файл конфигурации настроек редактора
+├── .staylelintrc     # файл конфигурации ESLint
+├── .gitattributes    # файл атрибутов Git
+├── .gitignore        # файл исключений Git
+├── package.json      # файл npm зависимостей и настроек проекта
+├── gulpfile.js       # файл с задачами для Gulp
+├── package-lock.json # lock-файл npm
+├── README.md         # документация проекта
+└── Specification.md  # техническое задание
 ```
-git clone SSH-адрес_вашего_форка
-```
-
-Команда клонирует репозиторий на ваш компьютер и подготовит всё необходимое для старта работы.
-
-#### 4. Начинайте обучение!
-
----
-
-<a href="https://htmlacademy.ru/intensive/adaptive"><img align="left" width="50" height="50" alt="HTML Academy" src="https://up.htmlacademy.ru/static/img/intensive/adaptive/logo-for-github-2.png"></a>
-
-Репозиторий создан для обучения на профессиональном онлайн‑курсе «[HTML и CSS. Адаптивная вёрстка и автоматизация](https://htmlacademy.ru/intensive/adaptive)» от [HTML Academy](https://htmlacademy.ru).
-
-[check-image]: https://github.com/htmlacademy-adaptive/{{userId}}-{{projectName}}/workflows/Project%20check/badge.svg?branch=master
-[check-url]: https://github.com/htmlacademy-adaptive/{{userId}}-{{projectName}}/actions
